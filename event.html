@@ -5,9 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
+    <link rel="stylesheet" href="event.css">
 </head>
 <body>
-    <h1> Event diye ki babe korte hoi click </h1>
-    <button>Click Me</button>
+
+    <section>
+        <div class="time">
+            <h1>Live Time Show</h1>
+          
+        <button id="demo" onclick="document.getElementById('livetime').innerHTML=Date()">The time is?</button>
+        <p class="text " id="livetime"> </p>
+        <button onclick="document.body.style.backgroundColor='yellow'" >color </button>
+
+        <button onclick="makRed()"> Click Me</button>
+        <button id="click2"> Click ME</button>
+        <button id="click4">Click me </button>
+        <script src="java.js"></script>
+        
+
+        </div>
+    </section>
+    <!-- <h1> Event diye ki babe korte hoi click </h1>
+    <button>Click Me</button> -->
+    <script>
+        const clickbutton = document.getElementById('click2');
+        clickbutton.onclick = btn2;
+        function btn2(){
+            document.body.style.backgroundColor='blue'
+        }
+    
+    </script>
 </body>
 </html>
