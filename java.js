@@ -4,5 +4,5 @@ function makRed(){
 }
 const soboj = document.getElementById('click4');
 soboj.onclick = function(){
-    document.body.style.backgroundColor='DarkGreen';
+    document.body.style.backgroundColor='DarkGreen'; 
 }
